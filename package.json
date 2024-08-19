@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://santiagomiraglia.github.io/PrimeraPreEntrega-SantiagoMiraglia/",
+  "homepage": "https://github.com/Ss4nti4go/PrimeraPreEntrega-SantiagoMiraglia",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
