@@ -4,14 +4,23 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import {NavBar} from './components/NavBar.jsx';
 import {ItemListContainer} from './components/ItemListContainer.jsx';
+import {Footer} from './components/Footer.jsx';
+import {Categorias} from './components/Categorias.jsx';
+import {ProductList} from './components/ProductList.jsx';
 
 const App = () => {
-  return (
-    <div>
+  return <>
+      <header>
       <NavBar/>
-      <ItemListContainer greeting="¡Bienvenidos a mi tienda!"/>
-    </div>
-  );
+      <ItemListContainer saludo="¡Bienvenido!"  />
+      </header>
+      <main className='bg-gray-300 min-h-screen flex'>
+        <Categorias/>
+        <ProductList/>
+      </main>
+      <Footer/>
+  </>
+  
 };
 
 export default App
