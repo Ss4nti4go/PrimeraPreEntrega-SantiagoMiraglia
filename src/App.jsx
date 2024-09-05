@@ -1,26 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import {NavBar} from './components/NavBar.jsx';
-import {ItemListContainer} from './components/ItemListContainer.jsx';
-import {Footer} from './components/Footer.jsx';
-import {Categorias} from './components/Categorias.jsx';
-import {ProductList} from './components/ProductList.jsx';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { NavBar } from './components/NavBar';
+import { ItemListContainer } from './components/ItemListContainer';
+import { Footer } from './components/Footer';
+import { Categorias } from './components/Categorias';
+import { ItemDetailContainer } from './components/ItemDetailContainer';
 
 const App = () => {
-  return <>
+  return (
+    <BrowserRouter>
       <header>
-      <NavBar/>
-      <ItemListContainer saludo="¡Bienvenido!"  />
+        <NavBar />
       </header>
-      <main className='bg-gray-300 min-h-screen flex'>
-        <Categorias/>
-        <ProductList/>
-      </main>
-      <Footer/>
-  </>
-  
+      <div className="flex">
+        <Categorias />
+        <main className="bg-gray-300 min-h-screen flex-1 p-4">
+          <Routes>
+            <Route path="/" element={<ItemListContainer saludo="¡Bienvenido!" />} />
+            <Route path="/category/:id" element={<ItemListContainer />} />
+            <Route path="/item/:id" element={<ItemDetailContainer />} />
+          </Routes>
+        </main>
+      </div>
+      <Footer />
+    </BrowserRouter>
+  );
 };
 
-export default App
+export default App;
