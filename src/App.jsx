@@ -15,7 +15,7 @@ const App = () => {
         <Categorias />
         <main className="bg-gray-300 min-h-screen flex-1 p-4">
           <Routes>
-            <Route path="/" element={<ItemListContainer saludo="¡Bienvenido!" />} />
+            <Route path="*" element={<ItemListContainer saludo="¡Bienvenido!" />} />
             <Route path="/category/:id" element={<ItemListContainer />} />
             <Route path="/item/:id" element={<ItemDetailContainer />} />
           </Routes>
