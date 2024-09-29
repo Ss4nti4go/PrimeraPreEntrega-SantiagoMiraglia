@@ -5,7 +5,7 @@ export const Categorias = () => {
   const categorias = [
     'Proteínas',
     'Vitaminas y Minerales',
-    'Aminoácidos',
+    'Creatinas',
     'Suplementos Pre-Entreno',
     'Accesorios de Gimnasio',
   ];

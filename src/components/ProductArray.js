@@ -17,7 +17,7 @@ export const products = [
     },
     {
       id: 3,
-      name: 'Creatina Monohidratada',
+      name: 'Creatina Monohidratada', 
       category: 'Proteínas',
       price: 19.99,
       image: 'https://via.placeholder.com/150',
