@@ -26,7 +26,7 @@ La base de datos de Firebase es utilizada para almacenar y gestionar los product
 
 ## Cómo Correr el Proyecto
 
-El proyecto estara en un deploy de github y hosteado en netlify con estos enlaces:
--https://ss4nti4go.github.io/PrimeraPreEntrega-SantiagoMiraglia/
+El proyecto estará en un repositorio de github y hosteado en netlify con estos enlaces:
+-https://github.com/Ss4nti4go/PrimeraPreEntrega-SantiagoMiraglia
 
--
+-https://powerfuell-fitness.netlify.app/
